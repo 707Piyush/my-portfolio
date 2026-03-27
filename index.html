@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Gupta — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="grid-bg"></div>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="noise"></div>
+  <div id="cursor-glow"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="nav">
+    <div class="nav-logo">
+      <div class="nav-dot"></div>
+      Piyush.dev
+    </div>
+    <ul>
+      <li><button onclick="scrollSection('about')">About</button></li>
+      <li><button onclick="scrollSection('skills')">Skills</button></li>
+      <li><button onclick="scrollSection('projects')">Projects</button></li>
+      <li><button onclick="scrollSection('education')">Education</button></li>
+      <li><button onclick="scrollSection('contact')">Contact</button></li>
+    </ul>
+    <a href="https://drive.google.com/file/d/1JGgLi5CpiR2bhjxtZ--JPSjUHD0Dqun2/view?usp=drive_link" target="_blank"
+      class="nav-cv">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="12" y1="18" x2="12" y2="12" />
+        <line x1="9" y1="15" x2="15" y2="15" />
+      </svg>
+      View CV
+    </a>
+  </nav>
+
+  <section id="about">
+    <div class="hero-side-strip left" aria-hidden="true">
+      <div class="hero-side-line"></div>
+      <span class="hero-side-label">Portfolio 2026</span>
+      <div class="hero-side-blip"></div>
+      <div class="hero-side-blip"></div>
+      <div class="hero-side-blip"></div>
+    </div>
+    <div class="hero-side-strip right" aria-hidden="true">
+      <div class="hero-side-line"></div>
+      <span class="hero-side-label">Data Science</span>
+      <div class="hero-side-blip"></div>
+      <div class="hero-side-blip"></div>
+      <div class="hero-side-blip"></div>
+    </div>
+
+    <div class="hero-img-side">
+      <div class="orbit-ring r1"></div>
+      <div class="orbit-ring r2"></div>
+      <div class="profile-wrap" id="profile-wrap">
+        <div class="profile-circle">
+          <img src="assets/photo.png" alt="Piyush Gupta"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<div style=width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(135deg,#0c1220,#101828)>👤</div>'" />
+        </div>
+        <div class="badge-avail">
+          <div class="nav-dot"></div>
+          <span
+            style="font-family:'Space Mono',monospace;font-size:.68rem;color:var(--p-green);white-space:nowrap">Available
+            for Hire</span>
+        </div>
+        <div class="badge-stat">
+          <div class="num" id="count-stat">0+</div>
+          <div class="lbl">Projects Done</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-pill">
+        <div class="dot"></div> Open to Opportunities
+      </div>
+      <h1 class="hero-name">
+        Piyush<br>
+        <span class="hero-name-grad" id="hero-last">Gupta</span>
+      </h1>
+      <p class="hero-role">
+        <span class="hero-role-line"></span>
+        <span id="role-text"></span>
+      </p>
+      <p class="hero-bio">B.Tech CS student at Lovely Professional University specializing in Data Science and Machine
+        Learning. I build data-driven solutions and clean software — from EDA pipelines to desktop apps.</p>
+      <div class="hero-btns">
+        <a href="https://github.com/707Piyush" target="_blank" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://drive.google.com/file/d/1JGgLi5CpiR2bhjxtZ--JPSjUHD0Dqun2/view?usp=drive_link" target="_blank"
+          class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="12" y1="18" x2="12" y2="12" />
+            <line x1="9" y1="15" x2="15" y2="15" />
+          </svg>
+          View CV
+        </a>
+        <a href="https://www.linkedin.com/in/07piyush/" target="_blank" class="btn btn-ghost">LinkedIn →</a>
+      </div>
+      <div class="hero-chips">
+        <a href="mailto:piyushchand23@lpu.in" class="chip-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+          </svg>
+          piyushchand23@lpu.in
+        </a>
+        <a href="tel:+918384005582" class="chip-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 3.14 2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          +91-8384005582
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills">
+    <div class="section-head reveal">
+      <span class="section-num">01 /</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects">
+    <div class="section-head reveal">
+      <span class="section-num">02 /</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="proj-grid" id="proj-grid"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="education">
+    <div class="section-head reveal">
+      <span class="section-num">03 /</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div
+          style="position:absolute;top:-60px;right:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(79,142,255,.08) 0%,transparent 70%);pointer-events:none">
+        </div>
+        <div class="edu-card-header">
+          <div class="edu-badge">🎓</div>
+          <div>
+            <div class="edu-uni">Lovely Professional University</div>
+            <div class="edu-degree">B.Tech — Computer Science &amp; Engineering<br>Specialization in Data Science &amp;
+              ML</div>
+          </div>
+        </div>
+        <div class="edu-meta">
+          <span class="edu-pill year">📅 2023 – 2027</span>
+          <span class="edu-pill spec">🔬 Data Science &amp; ML</span>
+          <span class="edu-pill loc">📍 Phagwara, Punjab</span>
+        </div>
+        <p style="font-family:'Space Mono',monospace;font-size:.78rem;color:var(--p-muted);line-height:1.7">Coursework
+          includes Data Structures, Algorithms, ML, Statistics, and Software Engineering. Active in technical clubs and
+          competitive programming.</p>
+      </div>
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1.2rem">
+        <p style="font-family:'Space Mono',monospace;font-size:.8rem;color:var(--p-muted);line-height:1.8">Pursuing a
+          strong foundation in CS fundamentals alongside specialization in data science, ML, and software development.
+          Actively building projects and certifications alongside academics.</p>
+        <div class="stat-boxes">
+          <div class="stat-box">
+            <div class="stat-box-n" style="color:var(--p-accent)">3+</div>
+            <div class="stat-box-l">Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-n" style="color:var(--p-green)">3</div>
+            <div class="stat-box-l">Certs</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-n" style="color:var(--p-orange)">15+</div>
+            <div class="stat-box-l">Tools</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-sub-head reveal">
+      <span
+        style="font-family:'Space Mono',monospace;font-size:.68rem;color:var(--p-accent);letter-spacing:.15em;opacity:.7">03.1
+        /</span>
+      <h3 style="font-size:1.3rem;font-weight:700;margin:0">Certifications</h3>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--p-border2),transparent)"></div>
+    </div>
+    <div class="cert-rows" id="cert-rows"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <div class="section-head reveal">
+      <span class="section-num">04 /</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards" id="contact-cards"></div>
+      <div class="email-cta reveal">
+        <div
+          style="position:absolute;top:-80px;right:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(79,142,255,.12) 0%,transparent 70%);pointer-events:none">
+        </div>
+        <div
+          style="position:absolute;bottom:-60px;left:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,163,.08) 0%,transparent 70%);pointer-events:none">
+        </div>
+        <div style="position:relative;z-index:1">
+          <div
+            style="display:inline-flex;align-items:center;gap:6px;padding:5px 13px;background:rgba(79,142,255,.1);border:1px solid rgba(79,142,255,.2);border-radius:100px;font-family:'Space Mono',monospace;font-size:.66rem;color:var(--p-accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem">
+            ✉️ &nbsp;Get In Touch</div>
+          <h3>Let's build<br><span class="email-cta-grad">something great</span> together.</h3>
+          <p>I'm actively looking for internships and opportunities in data science, machine learning, and software
+            development. Whether you have a project, a role, or just want to connect — my inbox is open.</p>
+          <div class="email-cta-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+            </svg>
+            <a href="mailto:piyushchand23@lpu.in">piyushchand23@lpu.in</a>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="mailto:piyushchand23@lpu.in" class="btn btn-primary"
+              style="padding:.75rem 1.5rem;font-size:.72rem">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+              </svg>
+              Send Email
+            </a>
+            <a href="https://drive.google.com/file/d/1JGgLi5CpiR2bhjxtZ--JPSjUHD0Dqun2/view?usp=drive_link"
+              target="_blank" class="btn btn-outline" style="padding:.75rem 1.5rem;font-size:.72rem">View CV</a>
+            <a href="https://www.linkedin.com/in/07piyush/" target="_blank" class="btn btn-ghost"
+              style="padding:.75rem 1.5rem;font-size:.72rem">LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="yr"></span> <span style="color:var(--p-accent)">Piyush Gupta</span>. All rights reserved.</p>
+    <p>Built with ❤️</p>
+  </footer>
+
+  <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <canvas id="particles" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5"></canvas>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
